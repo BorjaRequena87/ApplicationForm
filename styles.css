@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+:focus{
+  outline: none;
+}
+
+body{
+  background: #090f29;
+}
+
+/* FORM =================================== */
+
+.form_wrap{
+  width: 35%;
+  height: auto;
+  margin: 50px auto;
+  display: flex;
+  background: #fe2c5d;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media(max-width:768px) {
+  .form_wrap {
+    width: 100%;
+  }
+}
+
+.first-column.user_info {
+  width: 50%;
+  float: left;
+  padding: 0 20px 0 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .first-column.user_info, .second-column.user_info, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+    padding: 0;
+  }
+}
+
+/* Contact Form */
+
+form.form_contact {
+  width: 100%;
+  padding: 30px 40px;
+}
+
+form.form_contact .user_info {
+  display: flex;
+  flex-direction: column;
+}
+
+form.form_contact label{
+  font-weight: 600;
+  padding-bottom: 5px;
+  font-family: 'Montserrat';
+  font-size: 13px;
+  color: #090f29;
+}
+
+form.form_contact input,
+form.form_contact textarea, select {
+  width: 100%;
+  padding: 8px 5px 5px;
+  margin-bottom: 20px;
+  border: 1px solid #d2d2d2;
+  border-radius: 4px;
+  font-family: 'Montserrat';
+  color: #090f29;
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+form.form_contact textarea {
+  max-width: 100%;
+  min-width: 100%;
+}
+
+form.form_contact input[type="submit"] {
+  width: 180px;
+  background: #090f29;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  align-self: flex-end;
+  color: #fff;
+  font-family: 'Montserrat';
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+form.form_contact input[type="submit"]:hover {
+  background: #1c2b6e;
+}
+
+/* Successful Message */
+
+.success-message {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 170px;
+}
+
+.success-message h1 {
+  font-family: 'Montserrat';
+  font-size: 34px;
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #090f29;
+}
+
+.success-message a {
+  font-family: 'Montserrat';
+  display: block;
+  padding: 10px 30px;
+  background: #090f29;
+  text-decoration: none;
+  color: #fe2c5d;
+  border-radius: 10px;
+}
+
+.success-message a:hover {
+  background: #1c2b6e;
+}
