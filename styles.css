@@ -104,6 +104,11 @@ form.form_contact input[type="submit"]:hover {
   background: #1c2b6e;
 }
 
+input#upload{
+  background: none;
+  border: none;
+}
+
 /* Successful Message */
 
 .success-message {
